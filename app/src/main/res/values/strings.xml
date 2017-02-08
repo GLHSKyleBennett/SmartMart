@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmartMart</string>
+    <string name="welcome_to_smartmart">Welcome to SmartMart!</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="what_area_are_you_shopping_in">What area are you shopping in?</string>
+    <string name="search">Search</string>
+    <string name="electronics">Electronics</string>
+    <string name="loading">Loading...</string>
+    <string name="clothing">Clothing</string>
+    <string name="all_firms">All Firms</string>
+    <string name="list_all_firms">List All Firms</string>
+    <string name="affinity">Affinity</string>
+    <string name="dexacorp">DexaCorp</string>
+    <string name="down_to_earth">Down To Earth</string>
+    <string name="into_the_wild">Into The Wild</string>
+    <string name="lifestyle_resort_management">Lifestyle Resort Management</string>
+    <string name="mavco">MavCo</string>
+    <string name="skyline_entertainment">Skyline Entertainment</string>
+    <string name="smooth_move">Smooth Move</string>
+    <string name="spectrum">Spectrum</string>
+    <string name="waybound">WayBound</string>
+    <string name="smooth_move_mobile_cafe">Smooth Move Mobile Cafe</string>
+
+    <string-array name="Categories">
+        <item>"Electronics"</item>
+        <item>"Food and Beverages"</item>
+        <item>"Clothing"</item>
+        <item>"Pets"</item>
+    </string-array>
+</resources>

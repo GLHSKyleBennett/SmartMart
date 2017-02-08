@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a02kylebennett.smartmart_kyle_v10">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".Electronics" />
+        <activity android:name=".Food_and_Beverages" />
+        <activity android:name=".Clothing" />
+        <activity android:name=".Selector_Spinner" />
+        <activity android:name=".All_Firms" />
+        <activity android:name=".Mavco" />
+        <activity android:name=".Spectrum" />
+        <activity android:name=".DexaCorp" />
+        <activity android:name=".Affinity" />
+        <activity android:name=".Skyline" />
+        <activity android:name=".Smooth_Move" />
+        <activity android:name=".LRM" />
+        <activity android:name=".DTE" />
+        <activity android:name=".WayBound" />
+        <activity android:name=".Pets" />
+        <activity android:name=".ITW"></activity>
+    </application>
+
+</manifest>
