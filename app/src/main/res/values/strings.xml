@@ -20,6 +20,10 @@
     <string name="spectrum">Spectrum</string>
     <string name="waybound">WayBound</string>
     <string name="smooth_move_mobile_cafe">Smooth Move Mobile Cafe</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string-array name="Categories">
         <item>"Electronics"</item>
