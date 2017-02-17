@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_electronics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="76dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/tech_icon" />
+
+    <Button
+        android:text="List All Firms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="All_Firms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        app:srcCompat="@drawable/spectrum"
+                        android:id="@+id/imagefirm6"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:layout_width="137dp"
+                        android:onClick="Spectrum"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:scaleType="fitCenter"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="Spectrum"
+                        android:layout_width="match_parent"
+                        android:id="@+id/buttonfirm6"
+                        android:onClick="Spectrum"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_height="60dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        app:srcCompat="@drawable/mavco"
+                        android:id="@+id/imagefirm1"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:scaleType="fitXY"
+                        android:onClick="Mavco"
+                        android:layout_width="137dp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="MavCo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/buttonfirm1"
+                        android:onClick="Mavco"
+                        style="@style/Widget.AppCompat.Button.Borderless" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="137dp"
+                        app:srcCompat="@drawable/dexacorp2"
+                        android:id="@+id/imagefirm2"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:scaleType="fitXY"
+                        android:onClick="DexaCorp"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="Dexacorp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/buttonfirm2"
+                        android:onClick="DexaCorp"
+                        style="@style/Widget.AppCompat.Button.Borderless" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="137dp"
+                        app:srcCompat="@drawable/affinity"
+                        android:id="@+id/imagefirm3"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:scaleType="fitXY"
+                        android:onClick="Affinity"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="Affinity"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/buttonfirm3"
+                        android:onClick="Affinity"
+                        style="@style/Widget.AppCompat.Button.Borderless" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="137dp"
+                        app:srcCompat="@drawable/skyline"
+                        android:id="@+id/imagefirm4"
+                        style="@style/Widget.AppCompat.ImageButton"
+                        android:scaleType="fitCenter"
+                        android:onClick="Skyline"
+                        android:layout_height="70dp" />
+
+                    <Button
+                        android:text="Skyline Entertainment"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/buttonfirm4"
+                        android:onClick="Skyline"
+                        style="@style/Widget.AppCompat.Button.Borderless" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/electronics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="35sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
