@@ -83,18 +83,30 @@ public class ShopActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_share) {
-
+        if (id == R.id.electronics) {
+            Intent intent = new Intent(this, Electronics.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.clothing) {
+            Intent intent = new Intent(this, Clothing.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.food) {
+            Intent intent = new Intent(this, Food_and_Beverages.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.pets) {
+            Intent intent = new Intent(this, Pets.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.all_firms) {
+            Intent intent = new Intent(this, All_Firms.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout2);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void All_Firms(View view) {
-        Intent intent = new Intent(this, All_Firms.class);
-        startActivity(intent);
     }
 }
 

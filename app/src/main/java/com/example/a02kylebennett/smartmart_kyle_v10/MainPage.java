@@ -4,11 +4,14 @@ import android.app.ActionBar;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,94 +29,89 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 import static android.os.Build.VERSION_CODES.M;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class MainPage extends AppCompatActivity {
-
-    private ListView mDrawerList;
-    private ArrayAdapter<String> mAdapter;
-
-    private ActionBarDrawerToggle mDrawerToggle;
-    private DrawerLayout mDrawerLayout;
-    private String mActivityTitle;
+public class MainPage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
-        mDrawerList = (ListView)findViewById(R.id.navList);
-        addDrawerItems();
-        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-        mActivityTitle = getTitle().toString();
-        setupDrawer();
-    }
 
-    private void addDrawerItems() {
-        String[] osArray = { "Electronics", "Shop", "Pets", "Food", "Clothing" };
-        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, osArray);
-        mDrawerList.setAdapter(mAdapter);
-
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Shop(view);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout3);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
             }
-        });
-    }
-
-    private void setupDrawer() {
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-                R.string.drawer_open, R.string.drawer_close) {
 
             /** Called when a drawer has settled in a completely open state. */
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-
-                invalidateOptionsMenu();
-                mDrawerList.bringToFront();
-                mDrawerLayout.requestLayout();
-            }
-
-            /** Called when a drawer has settled in a completely closed state. */
-            public void onDrawerClosed(View view) {
-                super.onDrawerClosed(view);
-
                 invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
             }
+
         };
 
-        mDrawerToggle.setDrawerIndicatorEnabled(true);
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
-    }
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
-        mDrawerToggle.syncState();
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view4);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        mDrawerToggle.onConfigurationChanged(newConfig);
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout3);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+    //@Override
+    /*public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.navigation_menu, menu);
+        return true;
+    }*/
+
+
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-
-
-        // Activate the navigation drawer toggle
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
+        if (id == R.id.electronics) {
+            Intent intent = new Intent(this, Electronics.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.clothing) {
+            Intent intent = new Intent(this, Clothing.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.food) {
+            Intent intent = new Intent(this, Food_and_Beverages.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.pets) {
+            Intent intent = new Intent(this, Pets.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.all_firms) {
+            Intent intent = new Intent(this, All_Firms.class);
+            startActivity(intent);
         }
 
-        return super.onOptionsItemSelected(item);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout3);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
+
 
 
 
