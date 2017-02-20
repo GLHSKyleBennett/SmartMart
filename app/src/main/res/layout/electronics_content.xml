@@ -17,22 +17,11 @@
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/tech_icon" />
 
-    <Button
-        android:text="List All Firms"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:onClick="All_Firms"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:layout_below="@+id/imageView"
-        android:layout_above="@id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
