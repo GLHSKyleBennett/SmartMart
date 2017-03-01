@@ -16,6 +16,7 @@ public class Spectrum extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar11);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Spectrum");
 
 
     }

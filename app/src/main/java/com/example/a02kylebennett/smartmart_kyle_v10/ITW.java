@@ -16,6 +16,7 @@ public class ITW extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar16);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Into The Wild");
 
 
     }

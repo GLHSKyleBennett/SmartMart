@@ -16,6 +16,7 @@ public class Affinity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar13);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Affinity");
 
 
     }

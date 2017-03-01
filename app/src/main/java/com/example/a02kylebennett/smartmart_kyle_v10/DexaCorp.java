@@ -16,6 +16,7 @@ public class DexaCorp extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar14);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("DexaCorp");
 
 
     }

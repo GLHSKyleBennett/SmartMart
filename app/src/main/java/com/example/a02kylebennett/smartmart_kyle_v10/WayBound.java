@@ -16,6 +16,7 @@ public class WayBound extends AppCompatActivity {
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar19);
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Waybound");
 
 
 }

@@ -130,4 +130,19 @@ public class All_Firms extends AppCompatActivity implements NavigationView.OnNav
         Intent intent = new Intent(this, ITW.class);
         startActivity(intent);
     }
+
+    public void DTE(View view) {
+        Intent intent = new Intent(this, DTE.class);
+        startActivity(intent);
+    }
+
+    public void WayBound(View view) {
+        Intent intent = new Intent(this, WayBound.class);
+        startActivity(intent);
+    }
+
+    public void LRM(View view) {
+        Intent intent = new Intent(this, LRM.class);
+        startActivity(intent);
+    }
 }

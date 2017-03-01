@@ -17,6 +17,7 @@ public class Skyline extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar12);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Skyline Entertainment");
     }
 
     @Override

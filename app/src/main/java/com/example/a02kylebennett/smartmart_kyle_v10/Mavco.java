@@ -23,6 +23,7 @@ public class Mavco extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar10);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Mavco");
 
 
     }

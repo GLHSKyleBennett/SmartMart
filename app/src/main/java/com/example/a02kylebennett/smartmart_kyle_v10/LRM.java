@@ -16,6 +16,7 @@ public class LRM extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar17);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Luxury Resort Management");
 
 
     }

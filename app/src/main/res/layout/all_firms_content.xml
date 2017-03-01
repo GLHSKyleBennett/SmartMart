@@ -90,6 +90,7 @@
                     app:srcCompat="@drawable/dte"
                     android:id="@+id/imageButton14"
                     android:scaleType="fitXY"
+                    android:onClick="DTE"
                     android:layout_width="124dp"
                     android:contentDescription="@string/down_to_earth" />
 
@@ -98,6 +99,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/button40"
+                    android:onClick="DTE"
                     android:layout_weight="1"
                     style="@style/Widget.AppCompat.Button.Borderless" />
             </LinearLayout>
@@ -135,6 +137,7 @@
                     android:layout_height="92dp"
                     app:srcCompat="@drawable/lrm"
                     android:id="@+id/imageButton15"
+                    android:onClick="LRM"
                     android:layout_width="124dp"
                     android:scaleType="fitXY"
                     android:contentDescription="@string/lifestyle_resort_management" />
@@ -144,6 +147,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/button41"
+                    android:onClick="LRM"
                     android:layout_weight="1"
                     style="@style/Widget.AppCompat.Button.Borderless" />
             </LinearLayout>
@@ -255,6 +259,7 @@
                     app:srcCompat="@drawable/waybound"
                     android:id="@+id/imageButton13"
                     android:scaleType="fitXY"
+                    android:onClick="WayBound"
                     android:layout_width="124dp"
                     android:layout_height="124dp"
                     android:contentDescription="@string/waybound" />
@@ -264,6 +269,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/button39"
+                    android:onClick="WayBound"
                     android:layout_weight="1"
                     style="@style/Widget.AppCompat.Button.Borderless" />
             </LinearLayout>

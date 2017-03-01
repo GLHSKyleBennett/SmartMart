@@ -16,6 +16,7 @@ public class Smooth_Move extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar18);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Smooth Move Mobile Cafe");
 
 
     }

@@ -16,6 +16,7 @@ public class DTE extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar15);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Down to Earth");
 
 
     }
