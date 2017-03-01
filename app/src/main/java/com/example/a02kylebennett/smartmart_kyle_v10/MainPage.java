@@ -72,13 +72,12 @@ public class MainPage extends AppCompatActivity implements NavigationView.OnNavi
         }
     }
 
-    //@Override
-    /*public boolean onCreateOptionsMenu(Menu menu) {
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.navigation_menu, menu);
         return true;
     }*/
-
 
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -116,7 +115,7 @@ public class MainPage extends AppCompatActivity implements NavigationView.OnNavi
 
 
     public void Shop(View view) {
-        Intent intent = new Intent(this, ShopActivity.class);
+        Intent intent = new Intent(this, All_Firms.class);
         startActivity(intent);
 }
 }
