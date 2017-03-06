@@ -19,34 +19,25 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Description of Mavco"
+        android:text="http://mavcoinc.com/#home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView8"
-        android:textSize="20sp" />
-
-    <TextView
-        android:text="Website"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="51dp"
         android:id="@+id/textView9"
         android:textSize="20sp"
+        android:autoLink="web"
         android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Phone #"
+        android:text="Mavco is a leader in technology, allowing the consumer to buy high end technology products manufactured by MavCo themselves."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:id="@+id/textView10"
+        android:id="@+id/textView8"
         android:textSize="20sp"
-        android:layout_below="@+id/textView9"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imageView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

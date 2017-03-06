@@ -19,34 +19,39 @@
         android:id="@+id/imageView13" />
 
     <TextView
-        android:text="Description"
+        android:text="Into the Wild allows customers to buy any animal they please, often selling exotic animals no other company has dared to sell."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
         android:id="@+id/textView45"
         android:layout_below="@+id/imageView13"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
 
     <TextView
-        android:text="Website"
+        android:text="http://n2thewild.wixsite.com/intothewild/shop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView45"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="33dp"
-        android:id="@+id/textView46" />
+        android:id="@+id/textView46"
+        android:textSize="20sp"
+        android:autoLink="web" />
 
     <TextView
-        android:text="Phone #"
+        android:text="423-562-8308"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:id="@+id/textView47"
         android:layout_below="@+id/textView46"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:autoLink="phone" />
 
 
 </RelativeLayout>

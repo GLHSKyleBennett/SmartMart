@@ -15,39 +15,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/lrm"
-        android:layout_below="@+id/textView35"
         android:layout_centerHorizontal="true"
         android:id="@+id/imageButton12"
         android:clickable="false" />
 
     <TextView
-        android:text="Description"
+        android:text="Luxury Resort Management hosts trips for customers to go on during any point in the year, and clothing during the warmer months of the year."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageButton12"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="48dp"
-        android:id="@+id/textView36" />
+        android:id="@+id/textView36"
+        android:textSize="20sp" />
 
     <TextView
-        android:text="Website"
+        android:text="http://luxuryresortmanagement.weebly.com/"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView37"
         android:layout_below="@+id/textView36"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="36dp"
+        android:autoLink="web"
+        android:textSize="20sp" />
 
     <TextView
-        android:text="Phone #"
+        android:text="423-893-3535﻿﻿﻿"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView37"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="34dp"
-        android:id="@+id/textView38" />
+        android:id="@+id/textView38"
+        android:autoLink="phone"
+        android:textSize="20sp" />
 
 </RelativeLayout>

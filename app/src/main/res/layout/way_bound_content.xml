@@ -19,33 +19,26 @@
         android:id="@+id/imageView11" />
 
     <TextView
-        android:text="Website"
-        android:layout_width="wrap_content"
+        android:text="http://waybound-inc.wixsite.com/waybound-inc"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView40"
-        android:layout_toLeftOf="@+id/imageView11"
-        android:layout_toStartOf="@+id/imageView11"
         android:layout_marginTop="33dp"
-        android:id="@+id/textView41" />
+        android:id="@+id/textView41"
+        android:autoLink="web"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp" />
 
     <TextView
-        android:text="Description"
+        android:text="Waybound sells clothing in bundles, allowing the customer to buy whatever they would like."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:id="@+id/textView40"
         android:layout_below="@+id/imageView11"
         android:layout_alignLeft="@+id/textView41"
-        android:layout_alignStart="@+id/textView41" />
-
-    <TextView
-        android:text="Phone #"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView41"
-        android:layout_alignRight="@+id/textView41"
-        android:layout_alignEnd="@+id/textView41"
-        android:layout_marginTop="37dp"
-        android:id="@+id/textView42" />
+        android:layout_alignStart="@+id/textView41"
+        android:textSize="20sp" />
 
 </RelativeLayout>

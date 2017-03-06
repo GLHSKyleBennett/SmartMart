@@ -19,34 +19,39 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Description"
+        android:text="Down to Earth sells products designed to help the consumer look and feel good."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView10"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="41dp"
-        android:id="@+id/textView32" />
+        android:id="@+id/textView32"
+        android:textSize="20sp" />
 
     <TextView
-        android:text="Website"
+        android:text="http://www.downtoearthinctn.com/store/"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView33"
+        android:textSize="20sp"
+        android:autoLink="web"
         android:layout_below="@+id/textView32"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="27dp"
-        android:id="@+id/textView33" />
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Phone #"
+        android:text="(731)-925-7725"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
         android:id="@+id/textView34"
-        android:layout_below="@+id/textView33"
+        android:textSize="20sp"
+        android:autoLink="phone"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
 
 
 </RelativeLayout>

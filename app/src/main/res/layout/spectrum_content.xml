@@ -19,7 +19,7 @@
         android:id="@+id/imageView4" />
 
     <TextView
-        android:text="Description of Spectrum"
+        android:text="Spectrum is a leader in Technology in the VEI world, creating products never before seen and top of the line."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView4"
@@ -30,7 +30,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:text="Website"
+        android:text="https://nvspectrum.com/"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView12"
@@ -38,24 +38,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="35dp"
         android:id="@+id/textView13"
-        android:textSize="20sp" />
-
-    <TextView
-        android:text="Phone #"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:id="@+id/textView14"
         android:textSize="20sp"
-        android:layout_below="@+id/textView13" />
+        android:autoLink="web" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-    </LinearLayout>
 </RelativeLayout>

@@ -19,7 +19,6 @@
         android:id="@+id/imageView7" />
 
     <TextView
-        android:text="Affinity Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView7"
@@ -27,10 +26,11 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="26dp"
         android:id="@+id/textView20"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:text="Affinity provides a subscription-based product where a categorized box is sent to you monthly." />
 
     <TextView
-        android:text="Phone #"
+        android:text="630-428-6000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView21"
@@ -38,10 +38,11 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="28dp"
         android:id="@+id/textView22"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:autoLink="phone" />
 
     <TextView
-        android:text="Website"
+        android:text="http://www.affinitynv.com/store/"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
@@ -49,6 +50,7 @@
         android:textSize="20sp"
         android:layout_below="@+id/textView20"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:autoLink="web" />
 
 </RelativeLayout>

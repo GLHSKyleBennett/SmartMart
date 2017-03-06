@@ -19,7 +19,7 @@
         android:id="@+id/imageView6" />
 
     <TextView
-        android:text="DexaCorp Description"
+        android:text="DexaCorp sells healthy food, healthy beverages, and healthy living tools."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -29,7 +29,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:text="Website"
+        android:text="http://www.imxprs.com/free/dexacorp/dexacorp-official"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView16"
@@ -37,17 +37,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="24dp"
         android:id="@+id/textView17"
-        android:textSize="20sp" />
-
-    <TextView
-        android:text="Phone #"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:id="@+id/textView18"
         android:textSize="20sp"
-        android:layout_below="@+id/textView17"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:autoLink="web" />
 
 </RelativeLayout>

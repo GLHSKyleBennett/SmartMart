@@ -22,7 +22,7 @@
         android:layout_marginTop="15dp" />
 
     <TextView
-        android:text="Description"
+        android:text="Smooth Move is a mobile cafe food truck that drives to local area to sell food and beverages, along with a site to buy food and beverages online."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView9"
@@ -32,7 +32,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:text="Website"
+        android:text="http://smoothmovesc.wixsite.com/mobilecafe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView28"
@@ -40,10 +40,11 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="28dp"
         android:id="@+id/textView29"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:autoLink="web" />
 
     <TextView
-        android:text="Phone #"
+        android:text="(843)650-5600"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -51,6 +52,7 @@
         android:textSize="20sp"
         android:layout_below="@+id/textView29"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:autoLink="phone" />
 
 </RelativeLayout>
