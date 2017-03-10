@@ -31,6 +31,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="glhsvei@gulllakecs.org" />
+        android:text="glhsvei@gulllakecs.org"
+        android:autoLink="email"
+        android:textColorLink="@android:color/white" />
 
 </LinearLayout>
