@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SmartMart</string>
-    <string name="welcome_to_smartmart">Welcome to SmartMart!</string>
+    <string name="welcome_to_smartmart">Welcome to Smartmart!</string>
     <string name="shop_now">Shop Now</string>
     <string name="what_area_are_you_shopping_in">What area are you shopping in?</string>
     <string name="search">Search</string>
@@ -20,6 +20,10 @@
     <string name="spectrum">Spectrum</string>
     <string name="waybound">WayBound</string>
     <string name="smooth_move_mobile_cafe">Smooth Move Mobile Cafe</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string-array name="Categories">
         <item>"Electronics"</item>

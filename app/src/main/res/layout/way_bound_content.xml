@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_way_bound"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="76dp"
+    tools:context="com.example.a02kylebennett.smartmart_kyle_v10.WayBound">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/waybound"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView11" />
+
+    <TextView
+        android:text="http://waybound-inc.wixsite.com/waybound-inc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView40"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView41"
+        android:autoLink="web"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="Waybound sells clothing in bundles, allowing the customer to buy whatever they would like."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView40"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41"
+        android:textSize="20sp" />
+
+</RelativeLayout>

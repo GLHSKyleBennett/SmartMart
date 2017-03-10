@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lrm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="76dp"
+    tools:context="com.example.a02kylebennett.smartmart_kyle_v10.LRM">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lrm"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton12"
+        android:clickable="false" />
+
+    <TextView
+        android:text="Luxury Resort Management hosts trips for customers to go on during any point in the year, and clothing during the warmer months of the year."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView36"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="http://luxuryresortmanagement.weebly.com/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:autoLink="web"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="423-893-3535﻿﻿﻿"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView37"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView38"
+        android:autoLink="phone"
+        android:textSize="20sp" />
+
+</RelativeLayout>
